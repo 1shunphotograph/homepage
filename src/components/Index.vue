@@ -262,6 +262,12 @@ export default {
           icon: "img/vite.png",
         },
         {
+          name: "Pinia",
+          show: true,
+          url: "https://pinia.vuejs.org/",
+          icon: "img/pinia.png",
+        },
+        {
           name: "Element",
           show: true,
           url: "https://element-plus.org/zh-CN/component/button.html",
@@ -272,6 +278,12 @@ export default {
           show: true,
           url: "https://ant.design/docs/react/introduce-cn",
           icon: "img/antd.png",
+        },
+        {
+          name: "Umi",
+          show: true,
+          url: "https://umijs.org/",
+          icon: "img/umi.png",
         },
         {
           name: "菜鸟",
@@ -290,7 +302,7 @@ export default {
           show: true,
           url: "https://www.npmjs.com/",
           icon: "img/npm.png",
-        },
+        },       
         {
           name: "字节跳动",
           show: false,
@@ -305,7 +317,7 @@ export default {
         },
         {
           name: "谷歌",
-          show: true,
+          show: false,
           url: "https://translate.google.com",
           icon: "img/ggfy.ico",
         },
