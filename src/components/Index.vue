@@ -302,7 +302,7 @@ export default {
           show: true,
           url: "https://www.npmjs.com/",
           icon: "img/npm.png",
-        },       
+        },
         {
           name: "字节跳动",
           show: false,
@@ -424,8 +424,8 @@ export default {
         margin: 0 auto;
         background-color: #0000;
         border-radius: 22px;
-        border: 2.5px solid rgb(0, 217, 255);
-        box-shadow: 0px 2px 8px #0085dd7c;
+        border: 2.5px solid rgb(0, 208, 255);
+        box-shadow: 0px 2px 8px #0085dd76;
 
         span {
           width: 60px;
@@ -454,8 +454,8 @@ export default {
         max-width: 460px;
         min-width: 300px;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.962);
-        border-radius: 4px;
+        background-color: rgba(29, 29, 29, 0.949);
+        border-radius: 6px;
         padding: 15px 20px 10px;
         box-sizing: border-box;
         left: 0;
@@ -466,7 +466,6 @@ export default {
         @media screen and (max-width: 420px) {
           max-width: 300px;
           min-width: 240px;
-          background-color: rgba(255, 255, 255, 0.9);
         }
 
         ul {
@@ -478,16 +477,17 @@ export default {
             text-align: left;
             cursor: pointer;
             transition: 0.2s;
-            color: rgb(58, 58, 58);
+            color: #46df9ad4;
+            font-size: 17px;
             &.active {
-              color: rgb(0, 150, 219);
+              color: white;
             }
 
             span {
-              font-size: 16px;
+              font-size: 15px;
               font-style: oblique;
               margin-right: 20px;
-              color: #9e9e9e;
+              color: #cbcbcb;
             }
           }
           li:first-child span {
@@ -500,7 +500,7 @@ export default {
             color: rgb(236, 221, 2);
           }
           li:hover {
-            color: #0085dd;
+            color: white;
           }
         }
       }
