@@ -238,12 +238,6 @@ export default {
           icon: "img/feishu.png",
         },
         {
-          name: "MDN",
-          show: true,
-          url: "https://developer.mozilla.org/zh-CN/",
-          icon: "img/mdn.png",
-        },
-        {
           name: "掘金",
           show: true,
           url: "https://juejin.cn/",
@@ -310,6 +304,12 @@ export default {
           show: true,
           url: "https://www.npmjs.com/",
           icon: "img/npm.png",
+        },
+        {
+          name: "MDN",
+          show: true,
+          url: "https://developer.mozilla.org/zh-CN/",
+          icon: "img/mdn.png",
         },
         {
           name: "字节跳动",
