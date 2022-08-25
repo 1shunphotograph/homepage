@@ -273,6 +273,14 @@ export default {
           url: "https://element-plus.org/zh-CN/component/button.html",
           icon: "img/Element.png",
         },
+
+        {
+          name: "Webpack",
+          show: true,
+          // url: "https://webpack.docschina.org/concepts/",
+          url: "https://www.webpackjs.com/concepts/",
+          icon: "img/webpack.png",
+        },
         {
           name: "AntDesign",
           show: true,
