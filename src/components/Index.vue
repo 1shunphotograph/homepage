@@ -127,7 +127,8 @@ export default {
           name: "Apple",
           show: true,
           url: "https://www.apple.com.cn",
-          icon: "img/apple-color.png",
+          // icon: "img/apple-color.png",
+          icon: "img/apple-logo.png",
         },
         {
           name: "Qzone",
@@ -267,13 +268,18 @@ export default {
           url: "https://element-plus.org/zh-CN/component/button.html",
           icon: "img/Element.png",
         },
-
         {
           name: "Webpack",
           show: true,
           // url: "https://webpack.docschina.org/concepts/",
           url: "https://www.webpackjs.com/concepts/",
           icon: "img/webpack.png",
+        },
+        {
+          name: "React",
+          show: true,
+          url: "https://reactjs.bootcss.com/",
+          icon: "img/react.png",
         },
         {
           name: "AntDesign",
