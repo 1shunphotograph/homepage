@@ -130,13 +130,13 @@ export default {
           icon: "img/apple-color.png",
         },
         {
-          name: "QQ空间",
+          name: "Qzone",
           show: true,
           url: "https://qzone.qq.com/",
           icon: "img/qzone.png",
         },
         {
-          name: "QQ邮箱",
+          name: "QQmail",
           show: true,
           url: "https://mail.qq.com/",
           icon: "img/qqmail.png",
@@ -160,13 +160,13 @@ export default {
           icon: "img/google.png",
         },
         {
-          name: "必应",
+          name: "Bing",
           show: true,
           url: "https://cn.bing.com/",
           icon: "img/bing.jpg",
         },
         {
-          name: "Instagram",
+          name: "INS",
           show: true,
           url: "https://www.instagram.com",
           icon: "img/ins.png",
@@ -190,7 +190,7 @@ export default {
           icon: "img/huya.png",
         },
         {
-          name: "腾讯视频",
+          name: "QQTV",
           show: true,
           url: "https://v.qq.com/",
           icon: "img/txsp.png",
@@ -232,16 +232,16 @@ export default {
           icon: "img/github.png",
         },
         {
+          name: "Lark",
+          show: true,
+          url: "https://ixs0hgtp0d.feishu.cn/",
+          icon: "img/feishu.png",
+        },
+        {
           name: "MDN",
           show: true,
           url: "https://developer.mozilla.org/zh-CN/",
           icon: "img/mdn.png",
-        },
-        {
-          name: "飞书",
-          show: true,
-          url: "https://ixs0hgtp0d.feishu.cn/",
-          icon: "img/feishu.png",
         },
         {
           name: "掘金",
