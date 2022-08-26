@@ -83,7 +83,7 @@
   </div>
 </template>
 <script>
-import axios from "axios";
+// import axios from "axios";
 import jquery from "jquery";
 
 export default {
@@ -127,7 +127,6 @@ export default {
           name: "Apple",
           show: true,
           url: "https://www.apple.com.cn",
-          // icon: "img/apple-color.png",
           icon: "img/apple-logo.png",
         },
         {
@@ -227,10 +226,10 @@ export default {
           icon: "img/netease.jpeg",
         },
         {
-          name: "Github",
+          name: "百度",
           show: true,
-          url: "https://github.com/",
-          icon: "img/github.png",
+          url: "https://fanyi.baidu.com/",
+          icon: "img/bdfy.png",
         },
         {
           name: "Lark",
@@ -324,10 +323,10 @@ export default {
           icon: "img/bytedance.ico",
         },
         {
-          name: "百度",
+          name: "Github",
           show: true,
-          url: "https://fanyi.baidu.com/",
-          icon: "img/bdfy.png",
+          url: "https://github.com/",
+          icon: "img/github.png",
         },
         {
           name: "谷歌",
