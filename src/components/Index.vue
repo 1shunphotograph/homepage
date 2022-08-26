@@ -366,11 +366,11 @@ export default {
       } else {
         let url = this.sugurl + this.text;
         let t = this;
-        jquery(document).ready(function () {
+        jquery(document).ready(function() {
           jquery.ajax({
             url: url,
             dataType: "jsonp",
-            success: function (data) {
+            success: function(data) {
               if (data.g) {
                 t.isRes = true;
                 let l = data.g.length;
