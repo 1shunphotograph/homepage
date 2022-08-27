@@ -413,7 +413,6 @@ export default {
   width: 100%;
   flex: 1;
   background-image: url("../static/moon.png");
-  // background-image: url("../static/xiyang.jpg");
   background-size: 100% 100%;
   z-index: 1;
   .container {
