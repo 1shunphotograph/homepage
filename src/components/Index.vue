@@ -322,6 +322,12 @@ export default {
           url: "https://github.com/",
           icon: "img/github.png",
         },
+        // {
+        //   name: "hao123",
+        //   show: true,
+        //   url: "https://www.hao123.com/",
+        //   icon: "img/123.jpg",
+        // },
         {
           name: "谷歌",
           show: false,
