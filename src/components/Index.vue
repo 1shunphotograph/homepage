@@ -317,12 +317,6 @@ export default {
           icon: "img/mdn.png",
         },
         {
-          name: "字节跳动",
-          show: false,
-          url: "https://jobs.bytedance.com/",
-          icon: "img/bytedance.ico",
-        },
-        {
           name: "Github",
           show: true,
           url: "https://github.com/",
