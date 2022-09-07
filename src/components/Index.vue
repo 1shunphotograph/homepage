@@ -387,6 +387,7 @@ export default {
     searchBysug(args) {
       this.searchurl = this.url + args;
       window.open(this.searchurl);
+      this.text = "";
     },
     // ↓↓↓ 切换建议
     down() {
