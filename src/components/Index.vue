@@ -299,6 +299,12 @@ export default {
           icon: "img/cainiao.png",
         },
         {
+          name: "ruoyi",
+          show: true,
+          url: "http://doc.ruoyi.vip/ruoyi/",
+          icon: "img/ruoyi.png",
+        },
+        {
           name: "Bootstrap",
           show: true,
           url: "https://www.bootcss.com/",
