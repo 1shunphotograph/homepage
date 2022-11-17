@@ -100,6 +100,43 @@ export default {
       searchurl: "",
       items: [
         {
+          name: "Lark",
+          show: true,
+          url: "https://ixs0hgtp0d.feishu.cn/",
+          icon: "img/feishu.png",
+        },
+        {
+          name: "掘金",
+          show: true,
+          url: "https://juejin.cn/",
+          icon: "img/juejin.jpg",
+        },
+        {
+          name: "Vue",
+          show: true,
+          url: "https://cn.vuejs.org",
+          icon: "img/vue.png",
+        },
+
+        {
+          name: "Pinia",
+          show: true,
+          url: "https://pinia.vuejs.org/",
+          icon: "img/pinia.png",
+        },
+        {
+          name: "Vite",
+          show: true,
+          url: "https://cn.vitejs.dev/",
+          icon: "img/vite.png",
+        },
+        {
+          name: "Nuxt",
+          show: true,
+          url: "https://nuxt.com/docs/getting-started/introduction",
+          icon: "img/nuxt.png",
+        },
+        {
           name: "京东",
           show: false,
           url: "https://www.jd.com",
@@ -113,13 +150,13 @@ export default {
         },
         {
           name: "小米",
-          show: true,
+          show: false,
           url: "https://www.mi.com",
           icon: "img/xiaomi.png",
         },
         {
           name: "微博",
-          show: true,
+          show: false,
           url: "https://www.weibo.com",
           icon: "img/wb.png",
         },
@@ -131,7 +168,7 @@ export default {
         },
         {
           name: "Qzone",
-          show: true,
+          show: false,
           url: "https://qzone.qq.com/",
           icon: "img/qzone.png",
         },
@@ -185,19 +222,19 @@ export default {
         },
         {
           name: "虎牙",
-          show: true,
+          show: false,
           url: "https://www.huya.com",
           icon: "img/huya.png",
         },
         {
           name: "QQTV",
-          show: true,
+          show: false,
           url: "https://v.qq.com/",
           icon: "img/txsp.png",
         },
         {
           name: "爱奇艺",
-          show: true,
+          show: false,
           url: "https://www.iqiyi.com/",
           icon: "img/aqy.png",
         },
@@ -231,36 +268,7 @@ export default {
           url: "https://fanyi.baidu.com/",
           icon: "img/bdfy.png",
         },
-        {
-          name: "Lark",
-          show: true,
-          url: "https://ixs0hgtp0d.feishu.cn/",
-          icon: "img/feishu.png",
-        },
-        {
-          name: "掘金",
-          show: true,
-          url: "https://juejin.cn/",
-          icon: "img/juejin.jpg",
-        },
-        {
-          name: "Vue",
-          show: true,
-          url: "https://cn.vuejs.org",
-          icon: "img/vue.png",
-        },
-        {
-          name: "Vite",
-          show: true,
-          url: "https://cn.vitejs.dev/",
-          icon: "img/vite.png",
-        },
-        {
-          name: "Pinia",
-          show: true,
-          url: "https://pinia.vuejs.org/",
-          icon: "img/pinia.png",
-        },
+
         {
           name: "Element",
           show: true,
