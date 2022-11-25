@@ -75,10 +75,6 @@
           <div class="name">{{ item.name }}</div>
         </a>
       </div>
-
-      <div class="copyright">
-        Copyright&nbsp;&copy; 2021&nbsp;&nbsp;719043997@qq.com
-      </div>
     </div>
   </div>
 </template>
@@ -566,16 +562,6 @@ export default {
           opacity: 0.9;
         }
       }
-    }
-
-    .copyright {
-      width: 100%;
-      font-size: 14px;
-      position: absolute;
-      bottom: 2px;
-      text-align: center;
-      color: rgba(238, 238, 238, 0.75);
-      display: none;
     }
   }
 }
