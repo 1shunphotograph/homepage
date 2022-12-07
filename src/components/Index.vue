@@ -217,6 +217,12 @@ export default {
           icon: "img/bili.png",
         },
         {
+          name: "抖音",
+          show: false,
+          url: "https://www.douyin.com",
+          icon: "img/douyin.png",
+        },
+        {
           name: "虎牙",
           show: false,
           url: "https://www.huya.com",
