@@ -3,19 +3,7 @@
     <div class="container">
       <div class="search-wrap">
         <div class="search">
-          <span
-            ><svg
-              class="icon"
-              viewBox="0 0 1024 1024"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30px"
-              height="30px"
-            >
-              <path
-                d="M221.303 533.638c98.833-21.232 85.321-139.25 82.37-165.079-4.825-39.737-51.602-109.221-115.125-103.771-79.928 7.152-91.623 122.617-91.623 122.617-10.786 53.362 25.887 167.41 124.378 146.233zM326.21 738.91c-2.896 8.288-9.367 29.52-3.746 48.025 11.013 41.382 47.06 43.258 47.06 43.258h51.66V703.771h-55.407c-24.922 7.436-36.955 26.738-39.567 35.139zm78.396-403.22c54.553 0 98.604-62.727 98.604-140.386.058-77.544-44.051-140.273-98.604-140.273-54.44 0-98.663 62.728-98.663 140.273 0 77.602 44.223 140.386 98.663 140.386zm234.904 9.253c72.889 9.481 119.721-68.347 129.031-127.272 9.537-58.868-37.465-127.33-89.067-139.081-51.773-11.865-116.317 70.959-122.164 125-7.04 66.08 9.48 132.043 82.2 141.353zm178.647 346.624s-112.799-87.195-178.591-181.543c-89.296-139.08-216.114-82.484-258.519-11.75-42.234 70.731-108.028 115.408-117.395 127.273-9.48 11.694-136.242 80.097-108.085 205.044 28.156 124.946 126.989 122.505 126.989 122.505s72.832 7.266 157.302-11.694c84.528-18.735 157.303 4.71 157.303 4.71s197.438 66.135 251.48-61.195c53.984-127.332-30.484-193.35-30.484-193.35zm-337.88 189.49H351.981c-55.461-11.07-77.488-48.934-80.326-55.35-2.725-6.528-18.506-36.955-10.105-88.67 23.9-77.544 92.247-83.107 92.247-83.107h68.348v-84.017l58.131.964v310.18h.001zm239.105-.91H571.67c-57.22-14.757-59.888-55.519-59.888-55.519V661.31l59.888-.966v146.858c3.633 15.556 23.105 18.449 23.105 18.449h60.798V661.253h63.808v218.895zm209.13-436.146c0-28.212-23.444-113.136-110.355-113.136-87.026 0-98.663 80.155-98.663 136.867 0 54.099 4.542 129.657 112.683 127.216 108.143-2.44 96.335-122.562 96.335-150.947z"
-                fill="lightgreen"
-              /></svg
-          ></span>
+          <i class="space"></i>
           <input
             id="word"
             type="search"
@@ -25,6 +13,7 @@
             @keyup.enter="searchbyenter"
             @keydown.down="down"
             @keydown.up="up"
+            autofocus
           />
           <span>
             <a :href="searchurl" target="_blank" @click="search"
@@ -32,7 +21,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 width="22px"
                 height="22px"
-                fill="yellow"
+                fill="pink"
                 class="bi bi-search"
                 viewBox="0 0 16 16"
               >
@@ -79,7 +68,6 @@
   </div>
 </template>
 <script>
-// import axios from "axios";
 import jquery from "jquery";
 
 export default {
@@ -146,13 +134,13 @@ export default {
         },
         {
           name: "小米",
-          show: false,
+          show: true,
           url: "https://www.mi.com",
           icon: "img/xiaomi.png",
         },
         {
           name: "微博",
-          show: false,
+          show: true,
           url: "https://www.weibo.com",
           icon: "img/wb.png",
         },
@@ -182,7 +170,7 @@ export default {
         },
         {
           name: "163邮箱",
-          show: false,
+          show: true,
           url: "https://email.163.com/",
           icon: "img/163.png",
         },
@@ -224,37 +212,13 @@ export default {
         },
         {
           name: "虎牙",
-          show: false,
+          show: true,
           url: "https://www.huya.com",
           icon: "img/huya.png",
         },
         {
-          name: "QQTV",
-          show: false,
-          url: "https://v.qq.com/",
-          icon: "img/txsp.png",
-        },
-        {
-          name: "爱奇艺",
-          show: false,
-          url: "https://www.iqiyi.com/",
-          icon: "img/aqy.png",
-        },
-        {
-          name: "图虫",
-          show: false,
-          url: "https://tuchong.com/community",
-          icon: "img/tuchong.png",
-        },
-        {
-          name: "优酷",
-          show: false,
-          url: "https://www.youku.com/",
-          icon: "img/youku.png",
-        },
-        {
           name: "斗鱼",
-          show: false,
+          show: true,
           url: "https://www.douyu.com/",
           icon: "img/douyu.jpg",
         },
@@ -280,14 +244,13 @@ export default {
         {
           name: "Webpack",
           show: true,
-          // url: "https://webpack.docschina.org/concepts/",
           url: "https://www.webpackjs.com/concepts/",
           icon: "img/webpack.png",
         },
         {
           name: "React",
           show: true,
-          url: "https://reactjs.bootcss.com/",
+          url: "https://react.dev/",
           icon: "img/react.png",
         },
         {
@@ -453,8 +416,11 @@ export default {
         margin: 0 auto;
         background-color: #0000;
         border-radius: 22px;
-        border: 2.5px solid rgb(0, 208, 255);
+        border: 2.5px solid rgb(0, 206, 237);
         box-shadow: 0px 2px 8px #0085dd76;
+        .space {
+          width: 24px;
+        }
 
         span {
           width: 60px;
@@ -483,7 +449,7 @@ export default {
         max-width: 460px;
         min-width: 300px;
         position: absolute;
-        background-color: rgba(29, 29, 29, 0.949);
+        background-color: rgba(29, 29, 29, 0.857);
         border-radius: 6px;
         padding: 15px 20px 10px;
         box-sizing: border-box;
