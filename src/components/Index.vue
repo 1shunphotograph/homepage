@@ -84,7 +84,7 @@ export default {
       searchurl: "",
       items: [
         {
-          name: "Lark",
+          name: "飞书",
           show: true,
           url: "https://ixs0hgtp0d.feishu.cn/",
           icon: "img/feishu.png",
@@ -157,10 +157,16 @@ export default {
           icon: "img/qzone.png",
         },
         {
-          name: "QQmail",
+          name: "qq邮箱",
           show: true,
           url: "https://mail.qq.com/",
           icon: "img/qqmail.png",
+        },
+        {
+          name: "阿里邮箱",
+          show: true,
+          url: "https://mail.aliyun.com/alimail/",
+          icon: "img/ali.gif",
         },
         {
           name: "Gmail",
@@ -187,7 +193,13 @@ export default {
           icon: "img/bing.jpg",
         },
         {
-          name: "INS",
+          name: "ChatGPT",
+          show: true,
+          url: "https://chat.openai.com/",
+          icon: "img/openai.png",
+        },
+        {
+          name: "instagram",
           show: true,
           url: "https://www.instagram.com",
           icon: "img/ins.png",
@@ -199,7 +211,7 @@ export default {
           icon: "img/youtube.png",
         },
         {
-          name: "哔哩哔哩",
+          name: "bilibili",
           show: true,
           url: "https://www.bilibili.com",
           icon: "img/bili.png",
@@ -223,18 +235,17 @@ export default {
           icon: "img/douyu.jpg",
         },
         {
-          name: "网易云",
-          show: false,
-          url: "https://music.163.com",
-          icon: "img/netease.jpeg",
-        },
-        {
-          name: "百度",
+          name: "百度翻译",
           show: true,
           url: "https://fanyi.baidu.com/",
           icon: "img/bdfy.png",
         },
-
+        {
+          name: "谷歌",
+          show: true,
+          url: "https://translate.google.com",
+          icon: "img/ggfy.ico",
+        },
         {
           name: "Element",
           show: true,
@@ -254,7 +265,7 @@ export default {
           icon: "img/react.png",
         },
         {
-          name: "AntDesign",
+          name: "AntD",
           show: true,
           url: "https://ant.design/docs/react/introduce-cn",
           icon: "img/antd.png",
@@ -264,12 +275,6 @@ export default {
           show: true,
           url: "https://umijs.org/",
           icon: "img/umi.png",
-        },
-        {
-          name: "菜鸟",
-          show: false,
-          url: "https://www.runoob.com/",
-          icon: "img/cainiao.png",
         },
         {
           name: "ruoyi",
@@ -296,23 +301,12 @@ export default {
           icon: "img/mdn.png",
         },
         {
-          name: "Github",
+          name: "github",
           show: true,
           url: "https://github.com/",
-          icon: "img/github.png",
-        },
-        // {
-        //   name: "hao123",
-        //   show: true,
-        //   url: "https://www.hao123.com/",
-        //   icon: "img/123.jpg",
-        // },
-        {
-          name: "谷歌",
-          show: false,
-          url: "https://translate.google.com",
-          icon: "img/ggfy.ico",
-        },
+          icon: "img/github2.png",
+        }
+        
       ],
     };
   },
@@ -546,7 +540,7 @@ export default {
   left: 0;
   top: 0;
   background: inherit;
-  filter: blur(2px);
+  filter: blur(3px) brightness(110%);
   z-index: 2;
 }
 </style>
