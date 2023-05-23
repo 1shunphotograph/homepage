@@ -10,7 +10,7 @@
             v-model="text"
             @click.stop="getSuglist"
             @keyup="getSuglist"
-            @keyup.enter="searchbyenter"
+            @keyup.enter="searchByEnter"
             @keydown.down="down"
             @keydown.up="up"
             autofocus
@@ -28,7 +28,7 @@
             <li
               v-for="(item, index) in this.sugList"
               :key="index"
-              @click="searchBysug(item.q)"
+              @click="searchBySug(item.q)"
               :class="[currentIndex === index ? 'active' : '']"
             >
               <span>{{ index + 1 }}</span
@@ -73,8 +73,7 @@ export default {
       currentIndex: -1,
       url_baidu: "https://www.baidu.com/s?wd=",
       url_bing: "https://cn.bing.com/search?q=",
-      url_sug_baidu:
-        "https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&wd=",
+      url_sug_baidu:"https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&wd=",
       url_search: "",
       items: [
         {
@@ -95,7 +94,6 @@ export default {
           url: "https://cn.vuejs.org",
           icon: "img/vue.png",
         },
-
         {
           name: "Pinia",
           show: true,
@@ -299,8 +297,8 @@ export default {
           show: true,
           url: "https://github.com/",
           icon: "img/github2.png",
-        },
-      ],
+        }
+      ]
     };
   },
   created() {
@@ -309,10 +307,6 @@ export default {
     });
   },
   methods: {
-    //点击图标搜索
-    // search() {
-    //   this.url_search = this.url_baidu + this.text;
-    // },
     searchByBaidu() {
       this.url_search = this.url_baidu + this.text;
       window.open(this.url_search);
@@ -322,7 +316,7 @@ export default {
       window.open(this.url_search);
     },
     // enter键触发搜索
-    searchbyenter() {
+    searchByEnter() {
       // 判断是根据当前输入框的值进行搜索还是焦点所在行的数据进行搜搜
       if (this.currentIndex === -1) {
         this.url_search = this.url_baidu + this.text;
@@ -358,7 +352,7 @@ export default {
       }
     },
     //点击建议进行搜索
-    searchBysug(args) {
+    searchBySug(args) {
       this.url_search = this.url_baidu + args;
       window.open(this.url_search);
       this.text = "";
@@ -415,7 +409,6 @@ export default {
         .space {
           width: 24px;
         }
-
         span {
           margin-right: 6px;
           font-size: 17px;
@@ -430,9 +423,7 @@ export default {
           color: white;
         }
         .baidu{
-          // background-image: linear-gradient(-225deg, #5d7cd1 0%, #B19FFF 48%, #ECA1FE 100%);
-          // background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
-          background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+          background-image: linear-gradient(-200deg, #4facfe 0%, #00f2fe 48%, #56c0fe 100%);
         }
         .bing{
           background-image: linear-gradient(-225deg, #5b9bfc 0%, #acd5ff 48%, #5cb1fc 100%);
@@ -508,7 +499,6 @@ export default {
         }
       }
     }
-
     .navlist {
       width: 80%;
       margin: 40px auto 0;
@@ -531,14 +521,16 @@ export default {
         }
 
         .logo:hover {
-          filter: brightness(112%);
+          width: 56px;
+          height: 56px;
+          filter: brightness(104%);
         }
 
         .name {
           width: 80px;
           height: 20px;
           color: white;
-          font-size: 13px;
+          font-size: 14px;
           opacity: 0.9;
         }
       }
