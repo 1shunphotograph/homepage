@@ -166,7 +166,7 @@ export default {
           name: "阿里邮箱",
           show: true,
           url: "https://mail.aliyun.com/alimail/",
-          icon: "img/ali.gif",
+          icon: "img/alimail.png",
         },
         {
           name: "Gmail",
