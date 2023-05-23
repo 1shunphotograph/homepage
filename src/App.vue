@@ -19,7 +19,8 @@ export default {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family:"Microsoft Yahei"; */
+  font-family:"Comic Sans MS", "Noto Sans SC";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

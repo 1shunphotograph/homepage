@@ -16,19 +16,13 @@
             autofocus
           />
           <span>
-            <a :href="searchurl" target="_blank" @click="search"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22px"
-                height="22px"
-                fill="pink"
-                class="bi bi-search"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                /></svg></a
-          ></span>
+            <a class="baidu" target="_blank" @click="searchByBaidu">
+              百度
+            </a>
+          </span>
+          <span>
+            <a class="bing" target="_blank" @click="searchByBing">必应</a>
+          </span>
         </div>
         <div class="sug" v-show="isRes">
           <ul>
@@ -78,10 +72,11 @@ export default {
       isRes: false,
       sugList: [],
       currentIndex: -1,
-      url: "https://www.baidu.com/s?wd=",
-      sugurl:
+      url_baidu: "https://www.baidu.com/s?wd=",
+      url_bing: "https://cn.bing.com/search?q=",
+      url_sug_baidu:
         "https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&wd=",
-      searchurl: "",
+      url_search: "",
       items: [
         {
           name: "飞书",
@@ -305,8 +300,7 @@ export default {
           show: true,
           url: "https://github.com/",
           icon: "img/github2.png",
-        }
-        
+        },
       ],
     };
   },
@@ -317,19 +311,27 @@ export default {
   },
   methods: {
     //点击图标搜索
-    search() {
-      this.searchurl = this.url + this.text;
+    // search() {
+    //   this.url_search = this.url_baidu + this.text;
+    // },
+    searchByBaidu() {
+      this.url_search = this.url_baidu + this.text;
+      window.open(this.url_search);
+    },
+    searchByBing() {
+      this.url_search = this.url_bing + this.text;
+      window.open(this.url_search);
     },
     // enter键触发搜索
     searchbyenter() {
       // 判断是根据当前输入框的值进行搜索还是焦点所在行的数据进行搜搜
       if (this.currentIndex === -1) {
-        this.searchurl = this.url + this.text;
-        window.open(this.searchurl);
+        this.url_search = this.url_baidu + this.text;
+        window.open(this.url_search);
       } else {
         let args = this.sugList[this.currentIndex].q;
-        this.searchurl = this.url + args;
-        window.open(this.searchurl);
+        this.url_search = this.url_baidu + args;
+        window.open(this.url_search);
       }
     },
     // 显示建议
@@ -337,7 +339,7 @@ export default {
       if (this.text === "") {
         this.isRes = false;
       } else {
-        let url = this.sugurl + this.text;
+        let url = this.url_sug_baidu + this.text;
         let t = this;
         jquery(document).ready(function() {
           jquery.ajax({
@@ -358,8 +360,8 @@ export default {
     },
     //点击建议进行搜索
     searchBysug(args) {
-      this.searchurl = this.url + args;
-      window.open(this.searchurl);
+      this.url_search = this.url_baidu + args;
+      window.open(this.url_search);
       this.text = "";
     },
     // ↓↓↓ 切换建议
@@ -386,7 +388,7 @@ export default {
 .background {
   width: 100%;
   flex: 1;
-  background-image: url("../static/moon.png");
+  background-image: url("../static/beijing.jpg");
   background-size: 100% 100%;
   z-index: 1;
   .container {
@@ -399,34 +401,47 @@ export default {
     .search-wrap {
       margin-left: 40px;
       margin-right: 40px;
-      padding: 40px 0 30px 0;
+      padding: 90px 0 20px 0;
       .search {
         max-width: 520px;
         min-width: 300px;
         height: 42px;
+        border-radius: 16px;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto;
-        background-color: #0000;
-        border-radius: 22px;
-        border: 2.5px solid rgb(0, 206, 237);
-        box-shadow: 0px 2px 8px #0085dd76;
+        background-color: #f4f4f400;
+        border: 2.5px solid #73dffa;
         .space {
           width: 24px;
         }
 
         span {
+          margin-right: 6px;
+          font-size: 17px;
+        }
+        a{
           width: 60px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 10px;
           display: inline-block;
           cursor: pointer;
-          line-height: 14px;
+          color: white;
         }
-
+        .baidu{
+          // background-image: linear-gradient(-225deg, #5d7cd1 0%, #B19FFF 48%, #ECA1FE 100%);
+          // background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+          background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+        }
+        .bing{
+          background-image: linear-gradient(-225deg, #5b9bfc 0%, #acd5ff 48%, #5cb1fc 100%);
+        }
         input {
           width: 100%;
           height: 34px;
-          font-size: 17px;
+          font-size: 16px;
           border: none;
           outline: none;
           background-color: #0000;
@@ -540,7 +555,7 @@ export default {
   left: 0;
   top: 0;
   background: inherit;
-  filter: blur(3px) brightness(110%);
+  filter: blur(0px);
   z-index: 2;
 }
 </style>
