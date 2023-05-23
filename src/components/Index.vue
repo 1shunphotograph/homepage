@@ -16,12 +16,11 @@
             autofocus
           />
           <span>
-            <a class="baidu" target="_blank" @click="searchByBaidu">
-              百度
+            <a class="baidu" target="_blank" @click="searchByBaidu">Baidu
             </a>
           </span>
           <span>
-            <a class="bing" target="_blank" @click="searchByBing">必应</a>
+            <a class="bing" target="_blank" @click="searchByBing">Bing</a>
           </span>
         </div>
         <div class="sug" v-show="isRes">
@@ -79,13 +78,13 @@ export default {
       url_search: "",
       items: [
         {
-          name: "飞书",
+          name: "Lark",
           show: true,
           url: "https://ixs0hgtp0d.feishu.cn/",
           icon: "img/feishu.png",
         },
         {
-          name: "掘金",
+          name: "Juejin",
           show: true,
           url: "https://juejin.cn/",
           icon: "img/juejin.jpg",
@@ -116,31 +115,31 @@ export default {
           icon: "img/nuxt.png",
         },
         {
-          name: "京东",
+          name: "JD",
           show: false,
           url: "https://www.jd.com",
           icon: "img/jd.png",
         },
         {
-          name: "淘宝",
+          name: "Taobao",
           show: false,
           url: "https://www.taobao.com",
           icon: "img/tb.png",
         },
         {
-          name: "小米",
+          name: "Xiaomi",
           show: true,
           url: "https://www.mi.com",
           icon: "img/xiaomi.png",
         },
         {
-          name: "微博",
+          name: "weibo",
           show: true,
           url: "https://www.weibo.com",
           icon: "img/wb.png",
         },
         {
-          name: "Apple",
+          name: "apple",
           show: true,
           url: "https://www.apple.com.cn",
           icon: "img/apple-logo.png",
@@ -152,13 +151,13 @@ export default {
           icon: "img/qzone.png",
         },
         {
-          name: "qq邮箱",
+          name: "qqmail",
           show: true,
           url: "https://mail.qq.com/",
           icon: "img/qqmail.png",
         },
         {
-          name: "阿里邮箱",
+          name: "alimail",
           show: true,
           url: "https://mail.aliyun.com/alimail/",
           icon: "img/alimail.png",
@@ -170,7 +169,7 @@ export default {
           icon: "img/gmail.ico",
         },
         {
-          name: "163邮箱",
+          name: "163",
           show: true,
           url: "https://email.163.com/",
           icon: "img/163.png",
@@ -218,19 +217,19 @@ export default {
           icon: "img/douyin.png",
         },
         {
-          name: "虎牙",
+          name: "huya",
           show: true,
           url: "https://www.huya.com",
           icon: "img/huya.png",
         },
         {
-          name: "斗鱼",
+          name: "douyu",
           show: true,
           url: "https://www.douyu.com/",
           icon: "img/douyu.jpg",
         },
         {
-          name: "百度翻译",
+          name: "百度",
           show: true,
           url: "https://fanyi.baidu.com/",
           icon: "img/bdfy.png",
