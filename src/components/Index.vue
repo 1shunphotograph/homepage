@@ -32,7 +32,7 @@
               :class="[currentIndex === index ? 'active' : '']"
             >
               <span>{{ index + 1 }}</span
-              >{{ item.q }}
+              ><i>{{ item.q }}</i>
             </li>
           </ul>
         </div>
@@ -41,8 +41,8 @@
       <div class="navlist">
         <a
           class="nav"
-          v-for="(item, index) in items"
-          :key="index"
+          v-for="item in items"
+          :key="item.name"
           :href="item.url"
           v-show="item.show"
           target="_blank"
@@ -442,20 +442,17 @@ export default {
           display: none;
         }
       }
-
       .sug {
-        width: auto;
-        max-width: 460px;
+        max-width: 520px;
         min-width: 300px;
         position: absolute;
-        background-color: rgba(29, 29, 29, 0.857);
-        border-radius: 6px;
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+        border-radius: 16px;
         padding: 15px 20px 10px;
         box-sizing: border-box;
         left: 0;
         right: 0;
-        margin: 0 auto;
-        margin-top: 8px;
+        margin: 8px auto 0;
         z-index: 6;
         @media screen and (max-width: 420px) {
           max-width: 300px;
@@ -468,33 +465,38 @@ export default {
           li {
             display: block;
             margin-bottom: 6px;
+            font-size: 17px;
+            color: #1284e8;
             text-align: left;
             cursor: pointer;
             transition: 0.2s;
-            color: #46df9ad4;
-            font-size: 17px;
             &.active {
-              color: white;
+              color: rgb(233, 82, 27);
             }
 
             span {
               font-size: 15px;
               font-style: oblique;
               margin-right: 20px;
-              color: #cbcbcb;
+              color: #1885d8e2;
+              text-decoration: none;
+            }
+            
+            i{
+              font-style: normal;
             }
           }
           li:first-child span {
             color: red;
           }
           li:nth-child(2) span {
-            color: rgb(255, 157, 0);
+            color: rgb(248, 145, 0);
           }
           li:nth-child(3) span {
-            color: rgb(236, 221, 2);
+            color: rgb(227, 223, 1);
           }
           li:hover {
-            color: white;
+            color: rgb(233, 82, 27);
           }
         }
       }
@@ -505,13 +507,11 @@ export default {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-
       .nav {
         width: 80px;
         height: 96px;
         cursor: pointer;
         text-decoration: none;
-
         .logo {
           width: 50px;
           height: 50px;
@@ -519,13 +519,6 @@ export default {
           border-radius: 15px;
           transition: 0.12s;
         }
-
-        .logo:hover {
-          width: 56px;
-          height: 56px;
-          filter: brightness(104%);
-        }
-
         .name {
           width: 80px;
           height: 20px;
@@ -534,19 +527,30 @@ export default {
           opacity: 0.9;
         }
       }
+      .nav:hover{
+        .logo {
+          width: 56px;
+          height: 56px;
+          filter: brightness(104%);
+        }
+        .name{
+          font-size: 15px;
+          color: white;
+        }
+      }
     }
   }
 }
 // 背景高斯模糊
-.background::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: inherit;
-  filter: blur(0px);
-  z-index: 2;
-}
+// .background::after {
+//   content: "";
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   background: inherit;
+//   filter: blur(0px);
+//   z-index: 2;
+// }
 </style>

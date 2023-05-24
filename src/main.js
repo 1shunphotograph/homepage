@@ -12,7 +12,8 @@ const routes = [{
 }]
 // 创建路由实例
 const router = new VueRouter({
-  routes
+  mode: 'history',
+  routes:routes
 })
 
 new Vue({
