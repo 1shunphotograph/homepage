@@ -4,17 +4,8 @@
       <div class="search-wrap">
         <div class="search">
           <i class="space"></i>
-          <input
-            id="word"
-            type="search"
-            v-model="text"
-            @click.stop="getSuglist"
-            @keyup="getSuglist"
-            @keyup.enter="searchByEnter"
-            @keydown.down="down"
-            @keydown.up="up"
-            autofocus
-          />
+          <input id="word" type="search" v-model="text" @click.stop="getSuglist" @keyup="getSuglist"
+            @keyup.enter="searchByEnter" @keydown.down="down" @keydown.up="up" autofocus />
           <span>
             <a class="baidu" target="_blank" @click="searchByBaidu">Baidu
             </a>
@@ -22,38 +13,29 @@
           <span>
             <a class="bing" target="_blank" @click="searchByBing">Bing</a>
           </span>
+          <span>
+            <a class="google" target="_blank" @click="searchByGoogle">Google</a>
+          </span>
+          <!-- <span>
+            <a class="bilibili" target="_blank" @click="searchByBilibili">Bilibili</a>
+          </span> -->
         </div>
         <div class="sug" v-show="isRes">
           <ul>
-            <li
-              v-for="(item, index) in this.sugList"
-              :key="index"
-              @click="searchBySug(item.q)"
-              :class="[currentIndex === index ? 'active' : '']"
-            >
-              <span>{{ index + 1 }}</span
-              ><i>{{ item.q }}</i>
+            <li v-for="(item, index) in this.sugList" :key="index" @click="searchBySug(item.q)"
+              :class="[currentIndex === index ? 'active' : '']">
+              <span>{{ index + 1 }}</span><i>{{ item.q }}</i>
             </li>
           </ul>
         </div>
       </div>
 
       <div class="navlist">
-        <a
-          class="nav"
-          v-for="item in items"
-          :key="item.name"
-          :href="item.url"
-          v-show="item.show"
-          target="_blank"
-        >
-          <div
-            class="logo"
-            v-bind:style="{
-              background: 'url(' + item.icon + ')',
-              backgroundSize: '100% 100%',
-            }"
-          ></div>
+        <a class="nav" v-for="item in items" :key="item.name" :href="item.url" v-show="item.show" target="_blank">
+          <div class="logo" v-bind:style="{
+            background: 'url(' + item.icon + ')',
+            backgroundSize: '100% 100%',
+          }"></div>
           <div class="name">{{ item.name }}</div>
         </a>
       </div>
@@ -73,7 +55,9 @@ export default {
       currentIndex: -1,
       url_baidu: "https://www.baidu.com/s?wd=",
       url_bing: "https://cn.bing.com/search?q=",
-      url_sug_baidu:"https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&wd=",
+      url_google: "https://www.google.com/search?q=",
+      // url_bilibili: "https://search.bilibili.com/all?keyword=",
+      url_sug_baidu: "https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&wd=",
       url_search: "",
       items: [
         {
@@ -206,7 +190,7 @@ export default {
           name: "bilibili",
           show: true,
           url: "https://www.bilibili.com",
-          icon: "img/bili.png",
+          icon: "img/bilibili.png",
         },
         {
           name: "抖音",
@@ -315,6 +299,14 @@ export default {
       this.url_search = this.url_bing + this.text;
       window.open(this.url_search);
     },
+    searchByGoogle() {
+      this.url_search = this.url_google + this.text;
+      window.open(this.url_search);
+    },
+    // searchByBilibili() {
+    //   this.url_search = this.url_bilibili + this.text;
+    //   window.open(this.url_search);
+    // },
     // enter键触发搜索
     searchByEnter() {
       // 判断是根据当前输入框的值进行搜索还是焦点所在行的数据进行搜搜
@@ -334,11 +326,11 @@ export default {
       } else {
         let url = this.url_sug_baidu + this.text;
         let t = this;
-        jquery(document).ready(function() {
+        jquery(document).ready(function () {
           jquery.ajax({
             url: url,
             dataType: "jsonp",
-            success: function(data) {
+            success: function (data) {
               if (data.g) {
                 t.isRes = true;
                 let l = data.g.length;
@@ -384,6 +376,7 @@ export default {
   background-image: url("../static/beijing.jpg");
   background-size: 100% 100%;
   z-index: 1;
+
   .container {
     width: 100%;
     height: 100%;
@@ -391,57 +384,76 @@ export default {
     left: 0;
     top: 0;
     z-index: 4;
+
     .search-wrap {
       margin-left: 40px;
       margin-right: 40px;
       padding: 90px 0 20px 0;
+
       .search {
-        max-width: 520px;
+        max-width: 550px;
         min-width: 300px;
-        height: 42px;
+        height: 46px;
         border-radius: 16px;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #f4f4f400;
-        border: 2.5px solid #73dffa;
+        border: 2px solid #73dffa;
+
         .space {
-          width: 24px;
+          width: 20px;
         }
+
         span {
           margin-right: 6px;
           font-size: 17px;
         }
-        a{
+
+        a {
           width: 60px;
-          height: 30px;
-          line-height: 30px;
+          height: 34px;
+          line-height: 34px;
           border-radius: 10px;
           display: inline-block;
           cursor: pointer;
           color: white;
         }
-        .baidu{
+
+        .baidu {
           background-image: linear-gradient(-200deg, #4facfe 0%, #00f2fe 48%, #56c0fe 100%);
         }
-        .bing{
+
+        .bing {
           background-image: linear-gradient(-225deg, #5b9bfc 0%, #acd5ff 48%, #5cb1fc 100%);
         }
+
+        .google {
+          background-image: linear-gradient(-225deg, #5b7dda 0%, #B19FFF 48%, #ECA1FE 100%);
+        }
+
+        // .bilibili {
+        //   background-image: linear-gradient(-225deg, #5b7dda 0%, #B19FFF 48%, #ECA1FE 100%);
+        // }
+
         input {
           width: 100%;
-          height: 34px;
-          font-size: 16px;
+          height: 38px;
+          display: inline-block;
+          margin-right: 6px;
+          font-size: 18px;
           border: none;
           outline: none;
           background-color: #0000;
-          color: whitesmoke;
+          color: rgb(245, 245, 245);
         }
 
         input[type="search"]::-webkit-search-cancel-button {
           display: none;
         }
       }
+
       .sug {
         max-width: 520px;
         min-width: 300px;
@@ -454,6 +466,7 @@ export default {
         right: 0;
         margin: 8px auto 0;
         z-index: 6;
+
         @media screen and (max-width: 420px) {
           max-width: 300px;
           min-width: 240px;
@@ -470,6 +483,7 @@ export default {
             text-align: left;
             cursor: pointer;
             transition: 0.2s;
+
             &.active {
               color: rgb(233, 82, 27);
             }
@@ -481,37 +495,44 @@ export default {
               color: #1885d8e2;
               text-decoration: none;
             }
-            
-            i{
+
+            i {
               font-style: normal;
             }
           }
+
           li:first-child span {
             color: red;
           }
+
           li:nth-child(2) span {
             color: rgb(248, 145, 0);
           }
+
           li:nth-child(3) span {
             color: rgb(227, 223, 1);
           }
+
           li:hover {
             color: rgb(233, 82, 27);
           }
         }
       }
     }
+
     .navlist {
       width: 80%;
       margin: 40px auto 0;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+
       .nav {
         width: 80px;
         height: 96px;
         cursor: pointer;
         text-decoration: none;
+
         .logo {
           width: 50px;
           height: 50px;
@@ -519,6 +540,7 @@ export default {
           border-radius: 15px;
           transition: 0.12s;
         }
+
         .name {
           width: 80px;
           height: 20px;
@@ -527,13 +549,15 @@ export default {
           opacity: 0.9;
         }
       }
-      .nav:hover{
+
+      .nav:hover {
         .logo {
           width: 56px;
           height: 56px;
           filter: brightness(104%);
         }
-        .name{
+
+        .name {
           font-size: 15px;
           color: white;
         }
@@ -541,6 +565,7 @@ export default {
     }
   }
 }
+
 // 背景高斯模糊
 // .background::after {
 //   content: "";
