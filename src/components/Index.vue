@@ -391,7 +391,7 @@ export default {
       padding: 90px 0 20px 0;
 
       .search {
-        max-width: 550px;
+        max-width: 500px;
         min-width: 300px;
         height: 46px;
         border-radius: 16px;
@@ -455,10 +455,10 @@ export default {
       }
 
       .sug {
-        max-width: 520px;
+        max-width: 500px;
         min-width: 300px;
         position: absolute;
-        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+        background-image: linear-gradient(270deg, #e7f2f3 0%, #e3eeff 99%, #e3eeff 100%);
         border-radius: 16px;
         padding: 15px 20px 10px;
         box-sizing: border-box;
@@ -565,17 +565,4 @@ export default {
     }
   }
 }
-
-// 背景高斯模糊
-// .background::after {
-//   content: "";
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   background: inherit;
-//   filter: blur(0px);
-//   z-index: 2;
-// }
 </style>
