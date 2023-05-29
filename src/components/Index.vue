@@ -152,9 +152,15 @@ export default {
         },
         {
           name: "163",
-          show: true,
+          show: false,
           url: "https://email.163.com/",
           icon: "img/163.png",
+        },
+        {
+          name: "一言",
+          show: true,
+          url: "https://yiyan.baidu.com/",
+          icon: "img/yiyan.png",
         },
         {
           name: "Google",
@@ -223,7 +229,7 @@ export default {
           icon: "img/ggfy.ico",
         },
         {
-          name: "Element",
+          name: "Element+",
           show: true,
           url: "https://element-plus.org/zh-CN/component/button.html",
           icon: "img/Element.png",
