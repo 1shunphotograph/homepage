@@ -61,37 +61,37 @@ export default {
       url_search: "",
       items: [
         {
-          name: "Lark",
+          name: "lark",
           show: true,
           url: "https://ixs0hgtp0d.feishu.cn/",
           icon: "img/feishu.png",
         },
         {
-          name: "Juejin",
+          name: "juejin",
           show: true,
           url: "https://juejin.cn/",
           icon: "img/juejin.jpg",
         },
         {
-          name: "Vue",
+          name: "vue",
           show: true,
           url: "https://cn.vuejs.org",
           icon: "img/vue.png",
         },
         {
-          name: "Pinia",
+          name: "pinia",
           show: true,
           url: "https://pinia.vuejs.org/",
           icon: "img/pinia.png",
         },
         {
-          name: "Vite",
+          name: "vite",
           show: true,
           url: "https://cn.vitejs.dev/",
           icon: "img/vite.png",
         },
         {
-          name: "Nuxt",
+          name: "nuxt",
           show: true,
           url: "https://nuxt.com/docs/getting-started/introduction",
           icon: "img/nuxt.png",
@@ -109,7 +109,7 @@ export default {
           icon: "img/tb.png",
         },
         {
-          name: "Xiaomi",
+          name: "mi",
           show: true,
           url: "https://www.mi.com",
           icon: "img/xiaomi.png",
@@ -145,7 +145,7 @@ export default {
           icon: "img/alimail.png",
         },
         {
-          name: "Gmail",
+          name: "gmail",
           show: true,
           url: "https://mail.google.com/",
           icon: "img/gmail.ico",
@@ -157,13 +157,13 @@ export default {
           icon: "img/163.png",
         },
         {
-          name: "一言",
+          name: "yiyan",
           show: true,
           url: "https://yiyan.baidu.com/",
           icon: "img/yiyan.png",
         },
         {
-          name: "Google",
+          name: "google",
           show: true,
           url: "https://www.google.com",
           icon: "img/google.png",
@@ -175,19 +175,19 @@ export default {
           icon: "img/bing.jpg",
         },
         {
-          name: "ChatGPT",
+          name: "chatgpt",
           show: true,
           url: "https://chat.openai.com/",
           icon: "img/openai.png",
         },
         {
-          name: "instagram",
+          name: "ins",
           show: true,
           url: "https://www.instagram.com",
           icon: "img/ins.png",
         },
         {
-          name: "Youtube",
+          name: "youtube",
           show: true,
           url: "https://www.youtube.com/",
           icon: "img/youtube.png",
@@ -229,13 +229,19 @@ export default {
           icon: "img/ggfy.ico",
         },
         {
+          name: "Sass",
+          show: true,
+          url: "https://www.sasscss.com/",
+          icon: "img/sass.png",
+        },
+        {
           name: "Element+",
           show: true,
           url: "https://element-plus.org/zh-CN/component/button.html",
           icon: "img/Element.png",
         },
         {
-          name: "Webpack",
+          name: "webpack",
           show: true,
           url: "https://www.webpackjs.com/concepts/",
           icon: "img/webpack.png",
@@ -271,7 +277,7 @@ export default {
           icon: "img/bootstrap.png",
         },
         {
-          name: "NPM",
+          name: "npm",
           show: true,
           url: "https://www.npmjs.com/",
           icon: "img/npm.png",
@@ -544,7 +550,7 @@ export default {
           height: 50px;
           margin: 0 auto 8px;
           border-radius: 15px;
-          transition: 0.12s;
+          transition: 0.14s;
         }
 
         .name {
@@ -552,7 +558,6 @@ export default {
           height: 20px;
           color: white;
           font-size: 14px;
-          opacity: 0.9;
         }
       }
 
