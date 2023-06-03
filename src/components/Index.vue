@@ -206,13 +206,13 @@ export default {
         },
         {
           name: "huya",
-          show: true,
+          show: false,
           url: "https://www.huya.com",
           icon: "img/huya.png",
         },
         {
           name: "douyu",
-          show: true,
+          show: false,
           url: "https://www.douyu.com/",
           icon: "img/douyu.jpg",
         },
@@ -229,6 +229,18 @@ export default {
           icon: "img/ggfy.ico",
         },
         {
+          name: "markdown",
+          show: true,
+          url: "https://www.markdown.xyz/", //https://markdown.com.cn/
+          icon: "img/markdown.png",
+        },
+        {
+          name: "tailwind",
+          show: true,
+          url: "https://www.tailwindcss.cn/",
+          icon: "img/tailwindcss.png",
+        },
+        {
           name: "Sass",
           show: true,
           url: "https://www.sasscss.com/",
@@ -239,6 +251,12 @@ export default {
           show: true,
           url: "https://element-plus.org/zh-CN/component/button.html",
           icon: "img/Element.png",
+        },
+        {
+          name: "rollup",
+          show: true,
+          url: "https://cn.rollupjs.org/", //https://www.rollupjs.com/
+          icon: "img/rollup.png",
         },
         {
           name: "webpack",
@@ -287,6 +305,12 @@ export default {
           show: true,
           url: "https://developer.mozilla.org/zh-CN/",
           icon: "img/mdn.png",
+        },
+        {
+          name: "W3C",
+          show: true,
+          url: "https://www.w3school.com.cn/index.html",
+          icon: "img/w3c.png",
         },
         {
           name: "github",
