@@ -63,13 +63,13 @@ export default {
         {
           name: "lark",
           show: true,
-          url: "https://ixs0hgtp0d.feishu.cn/",
+          url: "https://ixs0hgtp0d.feishu.cn",
           icon: "img/feishu.png",
         },
         {
           name: "juejin",
           show: true,
-          url: "https://juejin.cn/",
+          url: "https://juejin.cn",
           icon: "img/juejin.jpg",
         },
         {
@@ -81,13 +81,13 @@ export default {
         {
           name: "pinia",
           show: true,
-          url: "https://pinia.vuejs.org/",
+          url: "https://pinia.vuejs.org",
           icon: "img/pinia.png",
         },
         {
           name: "vite",
           show: true,
-          url: "https://cn.vitejs.dev/",
+          url: "https://cn.vitejs.dev",
           icon: "img/vite.png",
         },
         {
@@ -129,37 +129,37 @@ export default {
         {
           name: "Qzone",
           show: false,
-          url: "https://qzone.qq.com/",
+          url: "https://qzone.qq.com",
           icon: "img/qzone.png",
         },
         {
           name: "qqmail",
           show: true,
-          url: "https://mail.qq.com/",
+          url: "https://mail.qq.com",
           icon: "img/qqmail.png",
         },
         {
           name: "alimail",
           show: true,
-          url: "https://mail.aliyun.com/alimail/",
+          url: "https://mail.aliyun.com/alimail",
           icon: "img/alimail.png",
         },
         {
           name: "gmail",
           show: true,
-          url: "https://mail.google.com/",
+          url: "https://mail.google.com",
           icon: "img/gmail.ico",
         },
         {
           name: "163",
           show: false,
-          url: "https://email.163.com/",
+          url: "https://email.163.com",
           icon: "img/163.png",
         },
         {
           name: "yiyan",
           show: true,
-          url: "https://yiyan.baidu.com/",
+          url: "https://yiyan.baidu.com",
           icon: "img/yiyan.png",
         },
         {
@@ -171,13 +171,13 @@ export default {
         {
           name: "Bing",
           show: true,
-          url: "https://cn.bing.com/",
+          url: "https://cn.bing.com",
           icon: "img/bing.jpg",
         },
         {
           name: "chatgpt",
           show: true,
-          url: "https://chat.openai.com/",
+          url: "https://chat.openai.com",
           icon: "img/openai.png",
         },
         {
@@ -189,7 +189,7 @@ export default {
         {
           name: "youtube",
           show: true,
-          url: "https://www.youtube.com/",
+          url: "https://www.youtube.com",
           icon: "img/youtube.png",
         },
         {
@@ -213,13 +213,13 @@ export default {
         {
           name: "douyu",
           show: false,
-          url: "https://www.douyu.com/",
+          url: "https://www.douyu.com",
           icon: "img/douyu.jpg",
         },
         {
           name: "百度",
           show: true,
-          url: "https://fanyi.baidu.com/",
+          url: "https://fanyi.baidu.com",
           icon: "img/bdfy.png",
         },
         {
@@ -231,19 +231,25 @@ export default {
         {
           name: "markdown",
           show: true,
-          url: "https://www.markdown.xyz/", //https://markdown.com.cn/
+          url: "https://www.markdown.xyz", //https://markdown.com.cn/
           icon: "img/markdown.png",
         },
         {
           name: "tailwind",
           show: true,
-          url: "https://www.tailwindcss.cn/",
+          url: "https://www.tailwindcss.cn",
           icon: "img/tailwindcss.png",
+        },
+        {
+          name: "headless",
+          show: true,
+          url: "https://headlessui.com",
+          icon: "img/headless.png",
         },
         {
           name: "Sass",
           show: true,
-          url: "https://www.sasscss.com/",
+          url: "https://www.sasscss.com",
           icon: "img/sass.png",
         },
         {
@@ -253,9 +259,15 @@ export default {
           icon: "img/Element.png",
         },
         {
+          name: "babel",
+          show: true,
+          url: "https://babel.docschina.org",
+          icon: "img/babel.png",
+        },
+        {
           name: "rollup",
           show: true,
-          url: "https://cn.rollupjs.org/", //https://www.rollupjs.com/
+          url: "https://cn.rollupjs.org", //https://www.rollupjs.com/
           icon: "img/rollup.png",
         },
         {
@@ -279,19 +291,19 @@ export default {
         {
           name: "Umi",
           show: true,
-          url: "https://umijs.org/",
+          url: "https://umijs.org",
           icon: "img/umi.png",
         },
         {
           name: "ruoyi",
           show: true,
-          url: "http://doc.ruoyi.vip/ruoyi/",
+          url: "http://doc.ruoyi.vip/ruoyi",
           icon: "img/ruoyi.png",
         },
         {
           name: "Bootstrap",
           show: true,
-          url: "https://www.bootcss.com/",
+          url: "https://www.bootcss.com",
           icon: "img/bootstrap.png",
         },
         {
@@ -303,7 +315,7 @@ export default {
         {
           name: "MDN",
           show: true,
-          url: "https://developer.mozilla.org/zh-CN/",
+          url: "https://developer.mozilla.org/zh-CN",
           icon: "img/mdn.png",
         },
         {
@@ -315,7 +327,7 @@ export default {
         {
           name: "github",
           show: true,
-          url: "https://github.com/",
+          url: "https://github.com",
           icon: "img/github2.png",
         }
       ]
