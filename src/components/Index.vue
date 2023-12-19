@@ -157,7 +157,25 @@ export default {
           icon: "img/163.png",
         },
         {
-          name: "yiyan",
+          name: "虎牙",
+          show: true,
+          url: "https://www.huya.com",
+          icon: "img/huya.png",
+        },
+        {
+          name: "Douyu",
+          show: true,
+          url: "https://www.douyu.com",
+          icon: "img/douyu.jpg",
+        },
+        {
+          name: "bilibili",
+          show: true,
+          url: "https://www.bilibili.com",
+          icon: "img/bilibili.png",
+        },
+        {
+          name: "文心一言",
           show: true,
           url: "https://yiyan.baidu.com",
           icon: "img/yiyan.png",
@@ -191,12 +209,6 @@ export default {
           show: true,
           url: "https://www.youtube.com",
           icon: "img/youtube.png",
-        },
-        {
-          name: "bilibili",
-          show: true,
-          url: "https://www.bilibili.com",
-          icon: "img/bilibili.png",
         },
         {
           name: "抖音",
