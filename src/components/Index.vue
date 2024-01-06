@@ -146,7 +146,7 @@ export default {
         },
         {
           name: "gmail",
-          show: true,
+          show: false,
           url: "https://mail.google.com",
           icon: "img/gmail.ico",
         },
@@ -155,6 +155,12 @@ export default {
           show: false,
           url: "https://email.163.com",
           icon: "img/163.png",
+        },
+        {
+          name: "抖音",
+          show: true,
+          url: "https://www.douyin.com",
+          icon: "img/douyin.png",
         },
         {
           name: "虎牙",
@@ -210,24 +216,7 @@ export default {
           url: "https://www.youtube.com",
           icon: "img/youtube.png",
         },
-        {
-          name: "抖音",
-          show: false,
-          url: "https://www.douyin.com",
-          icon: "img/douyin.png",
-        },
-        {
-          name: "huya",
-          show: false,
-          url: "https://www.huya.com",
-          icon: "img/huya.png",
-        },
-        {
-          name: "douyu",
-          show: false,
-          url: "https://www.douyu.com",
-          icon: "img/douyu.jpg",
-        },
+
         {
           name: "百度",
           show: true,
