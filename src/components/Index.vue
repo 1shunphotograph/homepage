@@ -280,7 +280,8 @@ export default {
         {
           name: "React",
           show: true,
-          url: "https://react.dev/",
+          //url: "https://react.dev/", //https://zh-hans.react.dev/
+          url: "https://zh-hans.react.dev/",
           icon: "img/react.png",
         },
         {
