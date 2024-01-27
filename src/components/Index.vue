@@ -181,6 +181,12 @@ export default {
           icon: "img/bilibili.png",
         },
         {
+          name: "CCTV",
+          show: true,
+          url: "https://www.yangshipin.cn",
+          icon: "img/cctv.png",
+        },
+        {
           name: "文心一言",
           show: true,
           url: "https://yiyan.baidu.com",
