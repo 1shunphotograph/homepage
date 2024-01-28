@@ -224,6 +224,12 @@ export default {
         },
 
         {
+          name: "spotify",
+          show: true,
+          url: "https://open.spotify.com/",
+          icon: "img/spotify.png",
+        },
+        {
           name: "百度",
           show: true,
           url: "https://fanyi.baidu.com",
