@@ -211,6 +211,12 @@ export default {
           icon: "img/openai.png",
         },
         {
+          name: "x",
+          show: true,
+          url: "https://x.com/home",
+          icon: "img/x.jpg",
+        },
+        {
           name: "ins",
           show: true,
           url: "https://www.instagram.com",
