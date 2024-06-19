@@ -441,7 +441,7 @@ export default {
 .background {
   width: 100%;
   flex: 1;
-  background-image: url("../static/beijing.jpg");
+  background-image: url("../static/bgwall.png");
   background-size: 100% 100%;
   z-index: 1;
 
