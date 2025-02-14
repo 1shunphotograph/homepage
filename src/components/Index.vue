@@ -61,7 +61,7 @@ export default {
       url_search: "",
       items: [
         {
-          name: "lark",
+          name: "飞书",
           show: true,
           url: "https://ixs0hgtp0d.feishu.cn",
           icon: "img/feishu.png",
@@ -103,19 +103,19 @@ export default {
           icon: "img/nuxt.png",
         },
         {
-          name: "JD",
+          name: "京东",
           show: true,
           url: "https://www.jd.com",
           icon: "img/jd.png",
         },
         {
-          name: "Taobao",
-          show: false,
+          name: "淘宝",
+          show: true,
           url: "https://www.taobao.com",
           icon: "img/tb.png",
         },
         {
-          name: "mi",
+          name: "小米官网",
           show: true,
           url: "https://www.mi.com",
           icon: "img/xiaomi.png",
@@ -133,7 +133,7 @@ export default {
           icon: "img/apple-logo.png",
         },
         {
-          name: "Qzone",
+          name: "qq空间",
           show: true,
           url: "https://qzone.qq.com",
           icon: "img/qzone.png",
@@ -146,7 +146,7 @@ export default {
         },
         {
           name: "alimail",
-          show: true,
+          show: false,
           url: "https://mail.aliyun.com/alimail",
           icon: "img/alimail.png",
         },
@@ -175,7 +175,7 @@ export default {
           icon: "img/huya.png",
         },
         {
-          name: "Douyu",
+          name: "斗鱼",
           show: true,
           url: "https://www.douyu.com",
           icon: "img/douyu.jpg",
@@ -187,13 +187,19 @@ export default {
           icon: "img/bilibili.png",
         },
         {
+          name: "优酷",
+          show: true,
+          url: "https://v.youku.com",
+          icon: "img/youku.png",
+        },
+        {
           name: "CCTV",
           show: true,
           url: "https://www.yangshipin.cn",
           icon: "img/cctv.png",
         },
         {
-          name: "文心一言",
+          name: "文小言",
           show: true,
           url: "https://yiyan.baidu.com",
           icon: "img/yiyan.png",
@@ -237,7 +243,7 @@ export default {
 
         {
           name: "spotify",
-          show: true,
+          show: false,
           url: "https://open.spotify.com/",
           icon: "img/spotify.png",
         },
@@ -346,7 +352,7 @@ export default {
         },
         {
           name: "W3C",
-          show: true,
+          show: false,
           url: "https://www.w3school.com.cn/index.html",
           icon: "img/w3c.png",
         },
