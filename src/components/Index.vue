@@ -193,6 +193,12 @@ export default {
           icon: "img/youku.png",
         },
         {
+          name: "腾讯视频",
+          show: true,
+          url: "https://v.qq.com",
+          icon: "img/txsp.png",
+        },
+        {
           name: "CCTV",
           show: true,
           url: "https://www.yangshipin.cn",
