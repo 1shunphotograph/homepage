@@ -61,16 +61,28 @@ export default {
       url_search: "",
       items: [
         {
-          name: "飞书",
-          show: true,
-          url: "https://ixs0hgtp0d.feishu.cn",
-          icon: "img/feishu.png",
-        },
-        {
           name: "豆包",
           show: true,
           url: "https://www.doubao.com/chat",
           icon: "img/doubao.png",
+        },
+        {
+          name: "Deepseek",
+          show: true,
+          url: "https://chat.deepseek.com/",
+          icon: "img/ds.png",
+        },
+        {
+          name: "google",
+          show: true,
+          url: "https://www.google.com",
+          icon: "img/google.png",
+        },
+        {
+          name: "Bing",
+          show: true,
+          url: "https://cn.bing.com",
+          icon: "img/bing.jpg",
         },
         {
           name: "juejin",
@@ -115,16 +127,10 @@ export default {
           icon: "img/tb.png",
         },
         {
-          name: "小米官网",
+          name: "小米",
           show: true,
           url: "https://www.mi.com",
           icon: "img/xiaomi.png",
-        },
-        {
-          name: "weibo",
-          show: true,
-          url: "https://www.weibo.com",
-          icon: "img/wb.png",
         },
         {
           name: "apple",
@@ -139,7 +145,7 @@ export default {
           icon: "img/qzone.png",
         },
         {
-          name: "qqmail",
+          name: "qq邮箱",
           show: true,
           url: "https://mail.qq.com",
           icon: "img/qqmail.png",
@@ -161,6 +167,12 @@ export default {
           show: false,
           url: "https://email.163.com",
           icon: "img/163.png",
+        },
+        {
+          name: "weibo",
+          show: true,
+          url: "https://www.weibo.com",
+          icon: "img/wb.png",
         },
         {
           name: "抖音",
@@ -211,18 +223,6 @@ export default {
           icon: "img/yiyan.png",
         },
         {
-          name: "google",
-          show: true,
-          url: "https://www.google.com",
-          icon: "img/google.png",
-        },
-        {
-          name: "Bing",
-          show: true,
-          url: "https://cn.bing.com",
-          icon: "img/bing.jpg",
-        },
-        {
           name: "chatgpt",
           show: true,
           url: "https://chat.openai.com",
@@ -246,12 +246,17 @@ export default {
           url: "https://www.youtube.com",
           icon: "img/youtube.png",
         },
-
         {
           name: "spotify",
           show: false,
           url: "https://open.spotify.com/",
           icon: "img/spotify.png",
+        },
+        {
+          name: "飞书",
+          show: true,
+          url: "https://ixs0hgtp0d.feishu.cn",
+          icon: "img/feishu.png",
         },
         {
           name: "百度",
