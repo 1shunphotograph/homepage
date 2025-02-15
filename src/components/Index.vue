@@ -612,7 +612,7 @@ export default {
     }
 
     .navlist {
-      width: 80%;
+      width: 70%;
       margin: 40px auto 0;
       display: flex;
       flex-direction: row;
