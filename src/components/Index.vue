@@ -464,7 +464,7 @@ export default {
 .background {
   width: 100%;
   flex: 1;
-  background-image: url("../static/beauty.png");
+  background-image: url("../static/tower.jpg");
   background-size: 100% 100%;
   z-index: 1;
 
