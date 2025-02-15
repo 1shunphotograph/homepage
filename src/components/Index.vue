@@ -73,6 +73,18 @@ export default {
           icon: "img/ds.png",
         },
         {
+          name: "文小言",
+          show: true,
+          url: "https://yiyan.baidu.com",
+          icon: "img/yiyan.png",
+        },
+        {
+          name: "chatgpt",
+          show: true,
+          url: "https://chat.openai.com",
+          icon: "img/openai.png",
+        },
+        {
           name: "google",
           show: true,
           url: "https://www.google.com",
@@ -215,18 +227,6 @@ export default {
           show: true,
           url: "https://www.yangshipin.cn",
           icon: "img/cctv.png",
-        },
-        {
-          name: "文小言",
-          show: true,
-          url: "https://yiyan.baidu.com",
-          icon: "img/yiyan.png",
-        },
-        {
-          name: "chatgpt",
-          show: true,
-          url: "https://chat.openai.com",
-          icon: "img/openai.png",
         },
         {
           name: "x",
