@@ -211,6 +211,12 @@ export default {
           icon: "img/youtube.png",
         },
         {
+          name: "twitch",
+          show: true,
+          url: "https://www.twitch.tv",
+          icon: "img/twitch.jpg",
+        },
+        {
           name: "spotify",
           show: false,
           url: "https://open.spotify.com/",
