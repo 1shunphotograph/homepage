@@ -625,21 +625,21 @@ export default {
       flex-wrap: wrap;
 
       .nav {
-        width: 80px;
-        height: 96px;
+        width: 84px;
+        height: 100px;
         cursor: pointer;
         text-decoration: none;
 
         .logo {
-          width: 50px;
-          height: 50px;
-          margin: 0 auto 8px;
-          border-radius: 15px;
+          width: 54px;
+          height: 54px;
+          margin: 0 auto 9px;
+          border-radius: 16px;
           transition: 0.14s;
         }
 
         .name {
-          width: 80px;
+          width: 84px;
           height: 20px;
           color: white;
           font-size: 14px;
@@ -648,8 +648,8 @@ export default {
 
       .nav:hover {
         .logo {
-          width: 56px;
-          height: 56px;
+          width: 58px;
+          height: 58px;
           filter: brightness(104%);
         }
 
