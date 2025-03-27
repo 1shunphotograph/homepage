@@ -128,7 +128,7 @@ export default {
         },
         {
           name: "alimail",
-          show: false,
+          show: true,
           url: "https://mail.aliyun.com/alimail",
           icon: "img/alimail.png",
         },
